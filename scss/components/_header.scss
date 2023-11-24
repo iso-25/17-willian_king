@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  margin-inline: auto;
+  background: var(--c-dark1);
+  position: fixed;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 37rem 20rem;
+  }
+
+  &__backdrop {
+    display: none;
+
+    @include tablet {
+      transform: translateX(120%);
+      display: block;
+      transition: var(--transition);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__logo {
+    color: var(--c-white);
+    font-size: 28rem;
+    font-weight: 700;
+    display: inline-flex;
+    transition: var(--transition-nav);
+
+    span {
+      color: var(--c-primary);
+    }
+
+    &:hover {
+      text-shadow: 0rem 0rem 25rem var(--c-primary);
+      transform: var(--transform-nav);
+    }
+
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+    z-index: 1;
+
+    @include tablet-small {
+      position: fixed;
+      width: 40%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--c-primary);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+    }
+
+    @include mobile-small {
+      width: 60%;
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    &._active ~ .header__backdrop {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40rem;
+      right: 40rem;
+      color: var(--c-white);
+    }
+  }
+
+  &__li {
+    transition: var(--transition-nav);
+
+    @include tablet-small {
+      font-size: 20rem;
+    }
+
+    &:hover {
+      text-shadow: 0rem 0rem 25rem var(--c-primary);
+      transform: var(--transform-nav);
+    }
+  }
+
+  &__a {
+    color: var(--c-white);
+    font-size: 16rem;
+    font-weight: 400;
+    transition: var(--transition);
+
+    @include tablet-small {
+      font-size: 20rem;
+    }
+
+    &.is-active,
+    &.active,
+    &:hover {
+      color: var(--c-primary);
+      @include tablet-small {
+        color: var(--c-dark1);
+      }
+    }
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet-small {
+    display: inline-block;
+  }
+}

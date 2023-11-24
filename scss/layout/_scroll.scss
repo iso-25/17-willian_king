@@ -1,0 +1,16 @@
+// ===== SCROLL CUSTOMIZE =====
+
+*::-webkit-scrollbar {
+  width: 12rem;
+  height: 12rem;
+  background-color: $c-dark2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6rem;
+  background-color: $c-primary;
+}
+
+// .scroll-container {
+//   height: 100%;
+// }

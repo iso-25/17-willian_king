@@ -1,0 +1,45 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-small: 380px;
+
+$c-primary: #ed9902;
+$c-dark2: #2d2b29; 
+
+:root {
+  --ff: "Rubik", sans-serif;
+  --ff-icon: 'Material Icons', sans-serif;
+  --transition: 0.2s all ease-in-out;
+  --transition-input: 0.3s all ease-in-out;
+  --transition-nav: 0.2s all ease-out;
+  --transform-nav: scale(1.2);
+
+  --c-primary: #ed9902;
+  --c-white: #fff;
+  --c-dark1: #21201e;
+  --c-dark2: #{$c-dark2};
+  --c-body: #9b968b;
+  //   border-bottom: 1rem solid rgba(255, 255, 255, 0.15);
+  --border-section: 1rem solid #ffffff26;
+  --subscription-status-color: #a19a8b;
+
+  --font-h2-reg: 500 20rem/45rem var(--ff);
+
+  --swiper-navigation-color: #{$c-primary};
+  --swiper-pagination-color: #{$c-primary};
+  --swiper-pagination-bullet-inactive-color: #{$c-dark2}; 
+  --swiper-pagination-bullet-inactive-opacity: .6;
+  --swiper-navigation-size-my: 44rem;
+  --swiper-pagination-bullet-horizontal-gap: 15rem;
+  --swiper-pagination-bullet-width: 20rem;
+  --swiper-pagination-bullet-height: 20rem;
+
+}
+
+// @media screen {
+// 	:root {
+// 		--font-h2-reg: 500 16rem/45rem var(--ff);
+// 	}
+// }

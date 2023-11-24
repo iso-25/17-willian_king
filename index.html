@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Start project</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header  -->
+		<header class="header ">
+			<div class="container header__container">
+				<a href="#welcome" class="header__logo">William King<span>.</span></a>
+				<nav class="header__nav">
+					<ul class="header__ul links" id="headerUl">
+						<li class="header__li"><a class="header__a scroll-to" href="#welcome"
+								onclick="navToggle()">About</a></li>
+						<li class="header__li"><a class="header__a scroll-to" href="#service"
+								onclick="navToggle()">Services</a></li>
+						<li class="header__li"><a class="header__a scroll-to" href="#portfolio"
+								onclick="navToggle()">Portfolio</a></li>
+						<li class="header__li"><a class="header__a scroll-to" href="#customers"
+								onclick="navToggle()">Testimonials</a></li>
+						<li class="header__li"><a class="header__a scroll-to" href="#pricing"
+								onclick="navToggle()">Pricing</a></li>
+						<li class="header__li"><a class="header__a scroll-to" href="#touch"
+								onclick="navToggle()">Contact</a></li>
+						<span class="material-icons icon-close" onclick="navToggle()">close</span>
+					</ul>
+					<span class="header__backdrop" onclick="navToggle()"></span>
+					<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+
+			<!-- welcome -->
+			<section class="welcome anchor" id="welcome">
+				<div class="welcome__info">
+					<h1 class="title welcome__title">I’m William K.</h1>
+					<div class="welcome__roles">
+						<span>Web Designer</span>
+						<small>/</small>
+						<span>UI Designer</span>
+						<small>/</small>
+						<span>Graphic designer</span>
+					</div>
+					<div class="desc welcome__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
+						dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+					<a href="/" class="btn btn_primary welcome__btn">Explore My Work</a>
+				</div>
+				<div class="welcome__img">
+					<img src="./img/welcome.png" alt="Welcome">
+				</div>
+			</section>
+
+			<!-- service -->
+			<section class="service anchor" id="service">
+				<div class="info service__info">
+					<h2 class="title">My <span>Services</span></h2>
+					<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim.
+						Commodo
+						pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+				</div>
+				<div class="service__list">
+
+					<!-- item-1 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-1 service-item__img">
+								<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M38.0725 33.5797V32.0172V33.5797ZM44.6129 25.2155L43.0851 25.5429L43.0851 25.5429L44.6129 25.2155ZM44.636 25.3228L46.1638 24.9954L46.1638 24.9954L44.636 25.3228ZM44.636 28.2627L43.1082 27.9353L43.1082 27.9353L44.636 28.2627ZM38.182 20.0059V18.4434V20.0059ZM36.0413 33.5797L34.5289 33.187L34.0212 35.1422H36.0413V33.5797ZM37.3309 20.0059V18.4434H35.664L35.7716 20.1067L37.3309 20.0059ZM38.0725 32.0172H37.0539V35.1422H38.0725V32.0172ZM43.0851 25.5429L43.1082 25.6503L46.1638 24.9954L46.1408 24.888L43.0851 25.5429ZM43.1082 25.6503C43.2695 26.4033 43.2695 27.1822 43.1082 27.9353L46.1638 28.5901C46.4177 27.4054 46.4177 26.1801 46.1638 24.9954L43.1082 25.6503ZM38.0725 35.1422C41.9762 35.1422 45.3452 32.4096 46.1638 28.5901L43.1082 27.9353C42.5972 30.3193 40.4971 32.0172 38.0725 32.0172L38.0725 35.1422ZM38.182 21.5684C40.5428 21.5684 42.5876 23.2215 43.0851 25.5429L46.1408 24.8881C45.3356 21.1312 42.0218 18.4434 38.182 18.4434L38.182 21.5684ZM37.0539 32.0172H36.0413V35.1422H37.0539V32.0172ZM35.7716 20.1067C36.0561 24.5047 35.6367 28.9208 34.5289 33.187L37.5536 33.9724C38.745 29.3842 39.196 24.6349 38.8901 19.905L35.7716 20.1067ZM38.182 18.4434H37.3309V21.5684H38.182V18.4434Z"
+										fill="#ED9902" />
+									<path
+										d="M15.153 7.3652L14.917 5.82063L14.917 5.82063L15.153 7.3652ZM27.3664 7.36521L27.6024 5.82063L27.6024 5.82063L27.3664 7.36521ZM26.7371 43.9189L27.0102 45.4574L26.7371 43.9189ZM15.7822 43.9189L16.0554 42.3805L16.0554 42.3805L15.7822 43.9189ZM7.39351 36.6951L8.88652 36.2344L7.39351 36.6951ZM5.54061 16.4978L3.98867 16.3165L3.98867 16.3165L5.54061 16.4978ZM37.1299 17.7908L35.5779 17.9722L35.5779 17.9722L37.1299 17.7908ZM35.5097 35.4515L34.0166 34.9907L34.0166 34.9907L35.5097 35.4515ZM5.61609 15.8521L7.16802 16.0334L7.16802 16.0334L5.61609 15.8521ZM13.5581 7.60889L13.794 9.15346L13.794 9.15346L13.5581 7.60889ZM15.5029 43.8693L15.2298 45.4078L15.2298 45.4078L15.5029 43.8693ZM35.2097 36.4234L36.7027 36.8842L36.7027 36.8842L35.2097 36.4234ZM36.9562 16.3048L38.5081 16.1234L38.5081 16.1234L36.9562 16.3048ZM28.5118 7.54022L28.2758 9.0848L28.2758 9.0848L28.5118 7.54022ZM36.0412 33.5798L34.5289 33.1871L36.0412 33.5798ZM37.3308 20.006L35.7716 20.1068L37.3308 20.006ZM35.4042 16.4862L35.5779 17.9722L38.6818 17.6094L38.5081 16.1234L35.4042 16.4862ZM34.0166 34.9907L33.7167 35.9627L36.7027 36.8842L37.0027 35.9123L34.0166 34.9907ZM7.09254 16.6792L7.16802 16.0334L4.06415 15.6707L3.98867 16.3165L7.09254 16.6792ZM16.0554 42.3805L15.776 42.3309L15.2298 45.4078L15.5091 45.4574L16.0554 42.3805ZM13.794 9.15346L15.389 8.90978L14.917 5.82063L13.3221 6.06431L13.794 9.15346ZM27.1304 8.90978L28.2758 9.0848L28.7478 5.99565L27.6024 5.82063L27.1304 8.90978ZM15.389 8.90978C19.2803 8.31523 23.239 8.31523 27.1304 8.90978L27.6024 5.82063C23.3982 5.17828 19.1212 5.17828 14.917 5.82063L15.389 8.90978ZM26.464 42.3805C23.0212 42.9917 19.4981 42.9917 16.0554 42.3805L15.5091 45.4574C19.3132 46.1327 23.2061 46.1327 27.0102 45.4574L26.464 42.3805ZM8.88652 36.2344C6.93545 29.9127 6.32436 23.2518 7.09254 16.6792L3.98867 16.3165C3.17005 23.3206 3.82124 30.419 5.9005 37.1559L8.88652 36.2344ZM7.16802 16.0334C7.58072 12.5024 10.2956 9.68799 13.794 9.15346L13.3221 6.06431C8.42745 6.81215 4.63961 10.747 4.06415 15.6707L7.16802 16.0334ZM5.9005 37.1559C7.22243 41.4391 10.8219 44.6252 15.2298 45.4078L15.7761 42.3309C12.5243 41.7536 9.86419 39.4021 8.88652 36.2344L5.9005 37.1559ZM33.7167 35.9627C32.6875 39.2972 29.8872 41.7727 26.464 42.3805L27.0102 45.4574C31.5897 44.6444 35.3293 41.3342 36.7027 36.8842L33.7167 35.9627ZM38.5081 16.1234C37.9014 10.9324 33.9079 6.78405 28.7478 5.99565L28.2758 9.0848C32.0398 9.65988 34.9603 12.6878 35.4042 16.4862L38.5081 16.1234ZM34.5289 33.1871C34.3719 33.7915 34.2012 34.3929 34.0166 34.9907L37.0027 35.9123C37.2011 35.2693 37.3848 34.6225 37.5536 33.9725L34.5289 33.1871ZM35.5779 17.9722C35.661 18.6828 35.7255 19.3946 35.7716 20.1068L38.8901 19.9051C38.8405 19.1391 38.7711 18.3736 38.6818 17.6094L35.5779 17.9722ZM35.7716 20.1068C36.056 24.5049 35.6366 28.921 34.5289 33.1871L37.5536 33.9725C38.745 29.3844 39.196 24.635 38.8901 19.9051L35.7716 20.1068Z"
+										fill="white" />
+									<path d="M12.5 24.6097V26.2012C12.5 29.2648 13.2133 32.2862 14.5833 35.0263"
+										stroke="#ED9902" stroke-width="3.125" stroke-linecap="round" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- item-2 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-2 service-item__img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51"
+									fill="none">
+									<path
+										d="M33.0737 41.2501L33.4499 40.99C34.6269 40.1761 35.2156 39.769 35.7421 39.3327C38.603 36.9615 40.5246 33.6564 41.1641 30.0067C41.2818 29.335 41.343 28.6244 41.4653 27.2033L41.5286 26.4685C41.731 24.1163 41.7108 21.7503 41.4683 19.4019L41.3932 18.6751C40.9687 14.5653 38.4457 10.9633 34.7175 9.14434C28.5878 6.15371 21.4122 6.15371 15.2825 9.14434C11.5543 10.9633 9.03134 14.5653 8.60682 18.6751L8.53175 19.4019C8.28916 21.7503 8.26897 24.1163 8.47145 26.4685L8.5347 27.2033C8.65703 28.6244 8.7182 29.335 8.8359 30.0067C9.47544 33.6564 11.397 36.9615 14.2579 39.3327C14.7844 39.769 15.3731 40.1761 16.5501 40.99L16.9263 41.2501C18.5265 42.3567 19.3267 42.91 20.1286 43.2945C23.2069 44.7703 26.7931 44.7703 29.8714 43.2945C30.6733 42.91 31.4735 42.3567 33.0737 41.2501Z"
+										stroke="#ED9902" stroke-width="3.125" />
+									<path
+										d="M41.4653 27.2033L41.5286 26.4685C41.731 24.1163 41.7108 21.7503 41.4683 19.4019L41.3932 18.6751C40.9687 14.5653 38.4457 10.9633 34.7175 9.14434C28.5878 6.15371 21.4122 6.15371 15.2825 9.14434C11.5543 10.9633 9.03134 14.5653 8.60682 18.6751L8.53175 19.4019C8.28916 21.7503 8.26897 24.1163 8.47145 26.4685L8.5347 27.2033C8.65703 28.6244 8.7182 29.335 8.8359 30.0067C9.47544 33.6564 11.397 36.9615 14.2579 39.3327C14.7844 39.769 15.3731 40.1761 16.5501 40.99L16.9263 41.2501C18.5265 42.3567 19.3267 42.91 20.1286 43.2945"
+										stroke="white" stroke-width="3.125" stroke-linecap="round" />
+									<path d="M19.2708 25.1305L23.4375 29.2972L30.7292 21.4847" stroke="#ED9902"
+										stroke-width="3.125" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- item-3 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-3 service-item__img">
+								<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6.86877 11.5551C7.3384 9.55302 8.90165 7.98977 10.9037 7.52014V7.52014C12.6388 7.11315 14.4445 7.11315 16.1796 7.52014V7.52014C18.1817 7.98977 19.7449 9.55302 20.2146 11.5551V11.5551C20.6216 13.2902 20.6216 15.0959 20.2146 16.831V16.831C19.7449 18.833 18.1817 20.3963 16.1796 20.8659V20.8659C14.4445 21.2729 12.6388 21.2729 10.9037 20.8659V20.8659C8.90166 20.3963 7.3384 18.8331 6.86877 16.831V16.831C6.46178 15.0959 6.46178 13.2902 6.86877 11.5551V11.5551Z"
+										stroke="white" stroke-width="3.125" />
+									<path
+										d="M6.86877 34.4718C7.3384 32.4697 8.90165 30.9065 10.9037 30.4368V30.4368C12.6388 30.0298 14.4445 30.0298 16.1796 30.4368V30.4368C18.1817 30.9065 19.7449 32.4697 20.2146 34.4718V34.4718C20.6216 36.2069 20.6216 38.0126 20.2146 39.7476V39.7476C19.7449 41.7497 18.1817 43.313 16.1796 43.7826V43.7826C14.4445 44.1896 12.6388 44.1896 10.9037 43.7826V43.7826C8.90166 43.313 7.3384 41.7497 6.86877 39.7476V39.7476C6.46178 38.0126 6.46178 36.2069 6.86877 34.4718V34.4718Z"
+										stroke="#ED9902" stroke-width="3.125" />
+									<path
+										d="M29.7854 11.5551C30.2551 9.55302 31.8183 7.98977 33.8204 7.52014V7.52014C35.5555 7.11315 37.3612 7.11315 39.0962 7.52014V7.52014C41.0983 7.98977 42.6616 9.55302 43.1312 11.5551V11.5551C43.5382 13.2902 43.5382 15.0959 43.1312 16.831V16.831C42.6616 18.833 41.0983 20.3963 39.0962 20.8659V20.8659C37.3612 21.2729 35.5555 21.2729 33.8204 20.8659V20.8659C31.8183 20.3963 30.2551 18.8331 29.7854 16.831V16.831C29.3784 15.0959 29.3784 13.2902 29.7854 11.5551V11.5551Z"
+										stroke="white" stroke-width="3.125" />
+									<path
+										d="M29.7854 34.4718C30.2551 32.4697 31.8183 30.9065 33.8204 30.4368V30.4368C35.5555 30.0298 37.3612 30.0298 39.0962 30.4368V30.4368C41.0983 30.9065 42.6616 32.4697 43.1312 34.4718V34.4718C43.5382 36.2069 43.5382 38.0126 43.1312 39.7476V39.7476C42.6616 41.7497 41.0983 43.313 39.0962 43.7826V43.7826C37.3612 44.1896 35.5555 44.1896 33.8204 43.7826V43.7826C31.8183 43.313 30.2551 41.7497 29.7854 39.7476V39.7476C29.3784 38.0126 29.3784 36.2069 29.7854 34.4718V34.4718Z"
+										stroke="white" stroke-width="3.125" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- item-4 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-4 service-item__img">
+								<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.4583 19.4014H7.29166" stroke="#ED9902" stroke-width="3.125"
+										stroke-linecap="round" />
+									<path d="M10.4167 31.9014L8.33334 31.9014" stroke="#ED9902" stroke-width="3.125"
+										stroke-linecap="round" />
+									<path d="M8.33333 25.6514H4.16667" stroke="#ED9902" stroke-width="3.125"
+										stroke-linecap="round" />
+									<path
+										d="M25.0852 27.2449C25.9482 27.2449 26.6477 26.5453 26.6477 25.6824C26.6477 24.8194 25.9482 24.1199 25.0852 24.1199V27.2449ZM19.3083 27.2449H25.0852V24.1199H19.3083V27.2449Z"
+										fill="#ED9902" />
+									<path
+										d="M42.7899 20.3948L24.6601 10.6692C20.2974 8.32887 15.4555 12.7653 16.9401 17.7428L19.1303 25.0859C19.2464 25.4751 19.2462 25.8898 19.1297 26.2789L16.9516 33.5537C15.4622 38.5284 20.2971 42.9703 24.6622 40.6376L42.7824 30.9541C46.8468 28.7821 46.8513 22.5734 42.7899 20.3948Z"
+										stroke="white" stroke-width="3.125" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- item-5 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-2 service-item__img">
+								<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M28.6495 10.4291C28.6495 8.68968 27.3783 7.21143 25.6585 6.95095C25.222 6.88484 24.778 6.88484 24.3415 6.95095C22.6217 7.21143 21.3505 8.68969 21.3505 10.4291V12.8888C20.368 13.1692 19.432 13.5601 18.5568 14.047L16.8168 12.307C15.5868 11.0771 13.6427 10.9307 12.2424 11.9626C11.887 12.2245 11.5731 12.5384 11.3112 12.8938C10.2793 14.2941 10.4257 16.2382 11.6556 17.4682L13.3957 19.2082C12.9087 20.0834 12.5179 21.0193 12.2374 22.0019H9.77771C8.03832 22.0019 6.56007 23.2731 6.29959 24.9929C6.23347 25.4294 6.23347 25.8734 6.29959 26.3099C6.56007 28.0296 8.03831 29.3008 9.77769 29.3008H12.2374C12.5179 30.2834 12.9087 31.2194 13.3957 32.0946L11.6556 33.8346C10.4257 35.0645 10.2793 37.0087 11.3112 38.4089C11.5731 38.7643 11.887 39.0783 12.2425 39.3402C13.6427 40.3721 15.5868 40.2257 16.8168 38.9957L18.5568 37.2557C19.432 37.7427 20.368 38.1335 21.3505 38.414V40.8737C21.3505 42.6131 22.6217 44.0913 24.3415 44.3518C24.778 44.4179 25.222 44.4179 25.6585 44.3518C27.3783 44.0913 28.6495 42.6131 28.6495 40.8737V38.414C29.632 38.1335 30.568 37.7427 31.4432 37.2557L33.1832 38.9958C34.4131 40.2257 36.3573 40.3721 37.7576 39.3402C38.113 39.0783 38.4269 38.7644 38.6888 38.4089C39.7207 37.0087 39.5743 35.0645 38.3444 33.8346L36.6044 32.0946C37.0913 31.2194 37.4822 30.2834 37.7626 29.3008H40.2223C41.9617 29.3008 43.4399 28.0296 43.7004 26.3099C43.7665 25.8734 43.7665 25.4294 43.7004 24.9929C43.4399 23.2731 41.9617 22.0019 40.2223 22.0019H37.7626C37.4822 21.0193 37.0913 20.0833 36.6044 19.2082L38.3444 17.4681C39.5743 16.2382 39.7207 14.2941 38.6888 12.8938C38.4269 12.5384 38.113 12.2245 37.7576 11.9626C36.3573 10.9307 34.4132 11.0771 33.1832 12.307L31.4432 14.047C30.568 13.5601 29.632 13.1692 28.6495 12.8888V10.4291Z"
+										stroke="#ED9902" stroke-width="3.125" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M37.7576 39.3402C36.3573 40.3721 34.4131 40.2257 33.1832 38.9958L31.4432 37.2557C30.568 37.7427 29.632 38.1335 28.6495 38.414V40.8737C28.6495 42.6131 27.3783 44.0913 25.6585 44.3518C25.222 44.4179 24.778 44.4179 24.3415 44.3518C22.6217 44.0913 21.3505 42.6131 21.3505 40.8737V38.414C20.368 38.1335 19.432 37.7427 18.5568 37.2557L16.8168 38.9957C15.5868 40.2257 13.6427 40.3721 12.2425 39.3402C11.887 39.0783 11.5731 38.7643 11.3112 38.4089C10.2793 37.0087 10.4257 35.0645 11.6556 33.8346L13.3957 32.0946C12.9087 31.2194 12.5179 30.2834 12.2374 29.3008H9.77769C8.03831 29.3008 6.56007 28.0296 6.29959 26.3099C6.23347 25.8734 6.23347 25.4294 6.29959 24.9929C6.56007 23.2731 8.03832 22.0019 9.77771 22.0019H12.2374C12.5179 21.0193 12.9087 20.0834 13.3957 19.2082L11.6556 17.4682C10.4257 16.2382 10.2793 14.2941 11.3112 12.8938C11.5731 12.5384 11.887 12.2245 12.2424 11.9626C13.6427 10.9307 15.5868 11.0771 16.8168 12.307L18.5568 14.047C19.432 13.5601 20.368 13.1692 21.3505 12.8888V10.4291C21.3505 8.68969 22.6217 7.21143 24.3415 6.95095C24.778 6.88484 25.222 6.88484 25.6585 6.95095C27.3783 7.21143 28.6495 8.68968 28.6495 10.4291V12.8888C29.632 13.1692 30.568 13.5601 31.4432 14.047L33.1832 12.307C34.4132 11.0771 36.3573 10.9307 37.7576 11.9626"
+										stroke="white" stroke-width="3.125" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M19.7917 25.6513C19.7917 22.7748 22.1235 20.443 25 20.443C27.8765 20.443 30.2083 22.7748 30.2083 25.6513C30.2083 28.5278 27.8765 30.8597 25 30.8597C22.1235 30.8597 19.7917 28.5278 19.7917 25.6513Z"
+										stroke="#ED9902" stroke-width="3.125" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- item-6 -->
+					<a href="/">
+						<div class="service-item">
+							<div class="svg-type-5 service-item__img">
+								<svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M4.16667 36.1114L4.16667 27.8213L4.21745 27.0637C4.87091 17.315 11.8166 9.21796 21.1789 7.29075C23.7011 6.77157 26.299 6.77157 28.8211 7.29074C38.1834 9.21796 45.1291 17.315 45.7826 27.0637L45.8333 27.8213V36.1114M32.4783 37.7371C32.1257 35.8811 32.1257 33.973 32.4783 32.117C33.045 29.1339 35.2043 26.731 38.0621 25.9034L38.6682 25.7278C39.2983 25.5454 39.95 25.4528 40.6048 25.4528C43.4924 25.4528 45.8333 27.8481 45.8333 30.8027V39.0514C45.8333 42.0061 43.4924 44.4014 40.6048 44.4014C39.95 44.4014 39.2983 44.3088 38.6682 44.1263L38.0621 43.9508C35.2043 43.1231 33.045 40.7203 32.4783 37.7371ZM17.5217 37.7371C17.8743 35.8811 17.8743 33.973 17.5217 32.117C16.9549 29.1339 14.7957 26.731 11.9379 25.9034L11.3318 25.7278C10.7017 25.5454 10.05 25.4528 9.39518 25.4528C6.50755 25.4528 4.16666 27.8481 4.16668 30.8027L4.16668 39.0514C4.16666 42.0061 6.50755 44.4014 9.39517 44.4014C10.05 44.4014 10.7017 44.3088 11.3318 44.1263L11.9379 43.9508C14.7957 43.1231 16.9549 40.7203 17.5217 37.7371Z"
+										stroke="white" stroke-width="3.125" />
+									<path
+										d="M45.8333 39.0514C45.8333 42.0061 43.4924 44.4013 40.6048 44.4013C39.95 44.4013 39.2983 44.3088 38.6682 44.1263L38.0621 43.9507C35.2043 43.1231 33.045 40.7202 32.4783 37.7371C32.1257 35.8811 32.1257 33.973 32.4783 32.117C33.045 29.1339 35.2043 26.731 38.0621 25.9034L38.6682 25.7278C39.2983 25.5453 39.95 25.4528 40.6048 25.4528C43.4924 25.4528 45.8333 27.848 45.8333 30.8027V39.0514Z"
+										stroke="#ED9902" stroke-width="3.125" />
+									<path
+										d="M4.16668 39.0514C4.16666 42.0061 6.50755 44.4013 9.39517 44.4013C10.05 44.4013 10.7017 44.3088 11.3318 44.1263L11.9379 43.9507C14.7957 43.1231 16.9549 40.7202 17.5217 37.7371C17.8743 35.8811 17.8743 33.973 17.5217 32.117C16.9549 29.1339 14.7957 26.731 11.9379 25.9033L11.3318 25.7278C10.7017 25.5453 10.05 25.4528 9.39518 25.4528C6.50755 25.4528 4.16666 27.848 4.16668 30.8027L4.16668 39.0514Z"
+										stroke="#ED9902" stroke-width="3.125" />
+								</svg>
+							</div>
+							<div class="service-item__info">
+								<h3 class="service-item__title">Service title</h3>
+								<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+									turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+									imperdiet
+								</div>
+							</div>
+						</div>
+					</a>
+
+				</div>
+
+			</section> <!-- service -->
+
+			<!-- portfolio -->
+			<section class="portfolio anchor" id="portfolio">
+				<div class="info portfolio__info">
+					<h2 class="title">My <span>Portfolio</span></h2>
+					<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim.
+						Commodo
+						pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+				</div>
+				<div class="portfolio__list">
+					<div class="portfolio-item">
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+					<div class="portfolio-item">
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item-1.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+					<div class="portfolio-item">
+
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item-2.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+					<div class="portfolio-item">
+
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item-3.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+					<div class="portfolio-item">
+
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item-4.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+					<div class="portfolio-item">
+						<div class="portfolio-item__img">
+							<img src="./img/portfolio-item-5.png" alt="portfolio-item">
+						</div>
+						<a href="/" class="portfolio-item__search">
+							<img src="./img/search.svg" alt="">
+						</a>
+					</div>
+				</div>
+
+				<!-- swiper -->
+				<swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+					css-mode="true">
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item.png" alt="portfolio1">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item-1.png" alt="portfolio2">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item-2.png" alt="portfolio3">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item-3.png" alt="portfolio4">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item-4.png" alt="portfolio5">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="swiper-slide__img">
+							<img src="./img/portfolio-item-5.png" alt="portfolio6">
+						</div>
+						<a href="/" class="swiper-slide__search"><img src="./img/search.svg" alt=""></a>
+					</swiper-slide>
+				</swiper-container>
+
+			</section> <!-- portfolio -->
+
+			<!-- customers -->
+			<section class="customers anchor" id="customers">
+				<div class="info customers__info">
+					<h2 class="title">Listen to my <span>customers</span></h2>
+					<div class="desc customers__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+						turpis dignissim.
+						Commodo
+						pellentesque tristique aliquet turpis. Morbi risus imperdiet
+					</div>
+				</div>
+
+				<div class="customers__list">
+					<!-- customer-1 -->
+					<a href="/" class="customers-item-link">
+						<div class="customers-item">
+
+							<div class="desc customers-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis
+								dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
+							</div>
+							<div class="customers-item__customer">
+								<div class="customers-item__customer-foto">
+									<img src="./img/customer-1.png" alt="customer">
+								</div>
+								<div class="customers-item__customer-info">
+									<div class="customers-item__customer-name">Leslie Alexander</div>
+									<div class="customers-item__customer-role">Dog Trainer</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- customer-2 -->
+					<a href="/" class="customers-item-link">
+						<div class="customers-item">
+							<div class="desc customers-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis
+								dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
+							</div>
+							<div class="customers-item__customer">
+								<div class="customers-item__customer-foto">
+									<img src="./img/customer-2.png" alt="customer">
+								</div>
+								<div class="customers-item__customer-info">
+									<div class="customers-item__customer-name">Guy Hawkins</div>
+									<div class="customers-item__customer-role">Web Designer</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- customer-3 -->
+					<a href="/" class="customers-item-link">
+						<div class="customers-item">
+							<div class="desc customers-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis
+								dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
+							</div>
+							<div class="customers-item__customer">
+								<div class="customers-item__customer-foto">
+									<img src="./img/customer-3.png" alt="customer">
+								</div>
+								<div class="customers-item__customer-info">
+									<div class="customers-item__customer-name">Devon Lane</div>
+									<div class="customers-item__customer-role">Medical Assistant</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!-- customer-4 -->
+					<a href="/" class="customers-item-link">
+						<div class="customers-item">
+							<div class="desc customers-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis
+								dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
+							</div>
+							<div class="customers-item__customer">
+								<div class="customers-item__customer-foto">
+									<img src="./img/customer-4.png" alt="customer">
+								</div>
+								<div class="customers-item__customer-info">
+									<div class="customers-item__customer-name">Floyd Miles</div>
+									<div class="customers-item__customer-role">Marketing Coordinator</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+
+				</div>
+
+			</section> <!-- customers -->
+
+			<!-- pricing -->
+			<section class="pricing anchor" id="pricing">
+				<div class="info">
+					<h2 class="title">My <span>Pricing</span></h2>
+					<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+						turpis dignissim.
+						Commodo
+						pellentesque tristique aliquet turpis. Morbi risus imperdiet
+					</div>
+				</div>
+
+
+				<div class="pricing__list">
+
+					<!-- pricing-item-1 -->
+					<div class="pricing-item">
+						<div class="pricing-item__info">
+							<div class="title pricing-item__title">Silver</div>
+							<price class="pricing-item__price">$99.0</price>
+							<div class="desc pricing-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+								imperdiet
+							</div>
+						</div>
+						<a href="/" class="btn btn_secondary pricing-item__btn">Get Started</a>
+						<ul class="pricing-item__ul">
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+						</ul>
+					</div>
+
+					<!-- pricing-item-2 -->
+					<div class="pricing-item">
+						<div class="pricing-item__info">
+							<div class="title pricing-item__title">Silver</div>
+							<price class="pricing-item__price">$99.0</price>
+							<div class="desc pricing-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+								imperdiet
+							</div>
+						</div>
+						<a href="/" class="btn btn_primary pricing-item__btn">Get Started</a>
+						<ul class="pricing-item__ul">
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+						</ul>
+					</div>
+
+					<!-- pricing-item-3 -->
+					<div class="pricing-item">
+						<div class="pricing-item__info">
+							<div class="title pricing-item__title">Silver</div>
+							<price class="pricing-item__price">$99.0</price>
+							<div class="desc pricing-item__desc">Rutrum cursus varius ullamcorper venenatis faucibus
+								lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus
+								imperdiet
+							</div>
+						</div>
+						<a href="/" class="btn btn_secondary pricing-item__btn">Get Started</a>
+						<ul class="pricing-item__ul">
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+							<li class="pricing-item__li">12 GB Free space</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+			</section> <!-- pricing -->
+
+			<!-- touch -->
+			<section class="touch anchor" id="touch">
+				<div class="info">
+					<div class="title">Get in <span>touch</span></div>
+					<div class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+						turpis dignissim.
+						Commodo
+						pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+				</div>
+				<form action="" method="post" class="touch__form" id="touch-form">
+					<input type="text" class="touch__name" placeholder="Enter Your Name" form="touch-form" required>
+					<input type="text" class="touch__email" placeholder="Enter your email address" form="touch-form"
+						required>
+					<textarea class="touch__message" placeholder="Enter Message" form="touch-form" required></textarea>
+					<button class="btn btn_primary touch__btn" type="submit" form="touch-form">Send Message</button>
+				</form>
+			</section> <!-- touch -->
+
+		</div> <!-- class="container -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container footer__container">
+
+
+				<a href="/" class="footer__by">©
+					<script language="javascript" type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script> All rights reserved. Designed by
+					<span>SA7MAN.</span>
+				</a>
+				<social class="footer__link">
+					<ul class="footer__ul">
+						<li class="footer__li"><a class="footer__a" href="/">Twitter</a></li>
+						<li class="footer__li"><a class="footer__a" href="/">Dribbble</a></li>
+						<li class="footer__li"><a class="footer__a" href="/">Github</a></li>
+						<li class="footer__li"><a class="footer__a" href="/">Instagram</a></li>
+					</ul>
+				</social>
+
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="script.js"></script>
+	<script src="scroll.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+	<script src="swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
